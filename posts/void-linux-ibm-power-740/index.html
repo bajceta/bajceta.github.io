@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Installing Void Linux on IBM Power 740 | My blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
+For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version.">
+    <meta name="generator" content="Hugo 0.96.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Installing Void Linux on IBM Power 740" />
+<meta property="og:description" content="Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
+For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/void-linux-ibm-power-740/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-31T00:00:00+00:00" />
+
+<meta itemprop="name" content="Installing Void Linux on IBM Power 740">
+<meta itemprop="description" content="Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
+For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version."><meta itemprop="datePublished" content="2022-03-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-03-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="296">
+<meta itemprop="keywords" content="ibm,linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installing Void Linux on IBM Power 740"/>
+<meta name="twitter:description" content="Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
+For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Installing Void Linux on IBM Power 740</h1>
+      
+      <p class="tracked">
+        By <strong>Vladimir Bajčeta</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-03-31T00:00:00Z">March 31, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="going-for-void-linux">Going for Void Linux</h2>
+<p>Recently I switched from Ubuntu to <a href="https://voidlinux-ppc.org/">Void Linux</a> on all my boxes. Fortunately Void has great support for PPC.
+I even have it installed on a Powerbook G3.</p>
+<p>For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode.
+For a Power7 we need Void Linux ppc64 that is a BE version.</p>
+<p>I prefer minimal installs and adding on packages that I need later so I went for <a href="https://repo.voidlinux-ppc.org/live/20210825/void-live-ppc64-20210825.iso.">void-live-ppc64-20210825.iso</a>.</p>
+<h2 id="making-a-bootable-usb-on-linux">Making a bootable USB on Linux</h2>
+<ol>
+<li>insert the drive</li>
+<li>check the drive id with <code>dmesg</code>, sdb in my case</li>
+<li>unmount the drive if you have an automount daemon running</li>
+<li>copy the iso to usb with <code>dd</code></li>
+</ol>
+<!--listend-->
+<pre tabindex="0"><code class="language-nil" data-lang="nil">umount /dev/sdb
+dd if=void-live-ppc64-20210825.iso of=/dev/sdb bs=1m
+</code></pre><h2 id="using-hmc">Using HMC</h2>
+<p>I don&rsquo;t have the RJ45 serial cable so I had to install HMC in order to use a virtual console for the install.
+I found that the <code>HMC_Recovery_V8R870_1_x86.iso</code> can be installed in a VM and used to manage the server.</p>
+<p>Default user for HMC is <code>hscroot</code> and password is <code>abc123</code>.</p>
+<p>I couldn&rsquo;t get the virtual console running in a browser so I had to ssh into the HMC VM and use <code>vtmenu</code>.</p>
+<h2 id="installing-void-linux">Installing Void Linux</h2>
+<ol>
+<li>Create a new LPAR and assign the usb controller to it.</li>
+<li>Don&rsquo;t forget to plug in the USB you created before.</li>
+<li>Boot into Open Firmware and type:</li>
+</ol>
+<!--listend-->
+<pre tabindex="0"><code class="language-nil" data-lang="nil">devalias ud /pci@f2000000/usb@1b/disk@1
+boot ud:,\boot\grub.img
+</code></pre><p>You might have to change the devalias command to fit your setup. Use <code>ls</code> and <code>dev</code> commands in OF to navigate and find your device.</p>
+<ol>
+<li>Grub prompt should appear.</li>
+</ol>
+<p>Boot takes a lot of time, loading the kernel and initrd can take 10-20 minutes easy. It&rsquo;s much faster after the install.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/ibm" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ibm</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">linux</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/ibm-power-740/">IBM Power 740</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  My blog 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>

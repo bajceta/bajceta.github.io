@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My blog</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Void Linux on IBM Power 740</title>
+      <link>http://example.org/posts/void-linux-ibm-power-740/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/void-linux-ibm-power-740/</guid>
+      <description>Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
+For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version.</description>
+    </item>
+    
+    <item>
+      <title>IBM Power 740</title>
+      <link>http://example.org/posts/ibm-power-740/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/ibm-power-740/</guid>
+      <description>I saw this on server on a auction with just a few minutes to spare. Always liked PPC for some reason, so it peaked my interest. Ad was sparse with info, 2 cpus, 384GB, no disks. No clue on which CPUs, was it really 384GB ram&amp;hellip; Anyway I went for it.
+Turns out it was a top of the line box.
+Specs:
+ 2 x 8 core Power7 @3.55GHz 384GB ram 4 x 146GB 15k SAS  All CPUs and ram activated and has a PowerVM license.</description>
+    </item>
+    
+  </channel>
+</rss>
