@@ -15,7 +15,7 @@
       <guid>https://bajceta.github.io/posts/psion-netbook/</guid>
       <description>Psion Netbook has one CF card slot and one PCMCIA card slot. Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&amp;rsquo;t read the card.
 My experience with CF cards :
-   Card CF port PCMCIA adapter     HP 16MB no yes   noname 64MB yes yes   Sandisk 256MB no yes   Sandisk 512MB no no    First boot Copy the NB_450UK.</description>
+   Card CF port PCMCIA adapter     HP 16MB no yes   noname 64MB yes yes   Sandisk 256MB no yes   Sandisk 512MB no no    First boot If Netbook loses power it will lose the OS data too.</description>
     </item>
     
   </channel>

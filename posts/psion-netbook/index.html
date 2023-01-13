@@ -166,8 +166,14 @@ Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95
 </tbody>
 </table>
 <h2 id="first-boot">First boot</h2>
-<p>Copy the NB_450UK.IMG to the CF card as os.img. On powerup Netbook will read the file into the RAM.</p>
-<p>If the battery runs down it will lose the ram and you will need to use that CF card again.</p>
+<p>If Netbook loses power it will lose the OS data too.</p>
+<p>You will get a message:</p>
+<pre tabindex="0"><code>Please insert a bootable CF card, or start the &#39;RomInst&#39; application
+</code></pre><ol>
+<li>Get the firmware file from <a href="https://web.archive.org/web/20071012061831/http://www.psionteklogix.com/teknet/pdk/netbook-pdk/downloads.htm">webarchive</a>.</li>
+<li>Copy the NB_450UK.IMG to the CF card as os.img.</li>
+<li>Insert CF into the CF slot. PCMCIA adapter won&rsquo;t work.</li>
+</ol>
 <p>There is a second way of initializing the Netbook via a serial cable.</p>
 </div>
   
