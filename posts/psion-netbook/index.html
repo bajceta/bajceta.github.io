@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>My blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="Psion Netbook" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bajceta.github.io/posts/psion-netbook/" />
+    <meta itemprop="name" content="Psion Netbook">
+    <meta itemprop="description" content="">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Psion Netbook"/>
+    <meta name="twitter:description" content=""/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+
+    
+    <link rel="stylesheet" href="https://bajceta.github.io/scss/style.min.d039e54e57565bf50fe68be7bde759dff866549a41b1de008e1855216344e012.css" >
+</head>
+<body>
+    <header>
+    <div class="header header-frame">
+        <div>
+          
+            <h1 class="header__title">Psion Netbook</h1>
+          
+            
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list header-nav-list--menu">
+                
+                
+                    
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-list__link" href="/">
+                                <i class='fa fa-home fa-fw'></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+            <button class="header-nav-list__nav-btn">navigation</button>
+        </nav>
+        <button class="mb-header__menu-btn">
+            <span class="mb-header__menu-btn-line"></span>
+            <span class="mb-header__menu-btn-line"></span>
+            <span class="mb-header__menu-btn-line"></span>
+        </button>
+    </div>
+    <nav id="mobile-header-nav" class="mb-header-nav">
+  
+  
+  <button class="mb-header-nav__close-btn flex-center">
+    <svg
+            class="mb-header-nav__svg-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            >
+            <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+            <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+    </button>
+    
+    <div class="mb-header-nav__wrapper">
+        <div class="mb-header-nav__container">
+            <svg
+                width="240"
+                height="72"
+                viewBox="0 0 240 72"
+                class="mb-header-nav__title"
+                >
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                Tags
+                </text>
+            </svg>
+            <ul class="mb-header-nav-list">
+                
+                    
+                        
+                          <li class="mb-header-nav-list__item ">
+                        <a class="mb-header-nav-list__link" href="https://bajceta.github.io/tags/psion/"
+                                                            >psion</a
+                                                        >
+                    </li>
+                        
+                    
+                
+            </ul>
+        </div>
+        <div class="mb-header-nav__container">
+            <svg
+                width="240"
+                height="72"
+                viewBox="0 0 240 72"
+                class="mb-header-nav__title"
+                >
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                Menu
+                </text>
+            </svg>
+            <ul class="mb-header-nav-list">
+                
+                
+                    
+                      <li class="mb-header-nav-list__item ">
+                            <a class="mb-header-nav-list__link" href="/">
+                                Home
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+
+
+    <div id="content">
+<article class="post">
+  
+    <div class="post-content"><p>Psion Netbook has one CF card slot and one PCMCIA card slot.
+Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&rsquo;t read the card.</p>
+<p>My experience with Cards :</p>
+<table>
+<thead>
+<tr>
+<th>Card</th>
+<th>CF port</th>
+<th>PCMCIA adapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP 16MB</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>noname 64MB</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Sandisk 256MB</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Sandisk 512MB</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<h2 id="first-boot">First boot</h2>
+<p>Copy the NB_450UK.IMG to the CF card as os.img. On powerup Netbook will read the file into the RAM.</p>
+<p>If the battery runs down it will lose the ram and you will need to use that CF card again.</p>
+<p>There is a second way of initializing the Netbook via a serial cable.</p>
+</div>
+  
+</article>
+<button class="floating-button">
+    <a class="floating-button__link" href="https://bajceta.github.io/">
+        <span>home</span>
+    </a>
+</button>
+
+
+    </div>
+    
+    
+      
+<script src="https://bajceta.github.io/js/script.js"></script>
+
+    
+  </body>
+</html>

@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My blog</title>
-    <link>https://bajceta.github.io/</link>
-    <description>Recent content on My blog</description>
+    <title>Posts on My blog</title>
+    <link>https://bajceta.github.io/posts/</link>
+    <description>Recent content in Posts on My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jan 2023 14:38:27 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Psion Netbook</title>
-      <link>https://bajceta.github.io/posts/psion-netbook/</link>
-      <pubDate>Fri, 13 Jan 2023 14:38:27 +0100</pubDate>
-      
-      <guid>https://bajceta.github.io/posts/psion-netbook/</guid>
-      <description>Psion Netbook has one CF card slot and one PCMCIA card slot. Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&amp;rsquo;t read the card.
-My experience with Cards :
-   Card CF port PCMCIA adapter     HP 16MB no yes   noname 64MB yes yes   Sandisk 256MB no yes   Sandisk 512MB no no    First boot Copy the NB_450UK.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bajceta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Void Linux on IBM Power 740</title>
       <link>https://bajceta.github.io/posts/void-linux-ibm-power-740/</link>
