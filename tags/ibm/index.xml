@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ibm on My blog</title>
+    <title>ibm on My New Hugo Site</title>
     <link>https://bajceta.github.io/tags/ibm/</link>
-    <description>Recent content in ibm on My blog</description>
+    <description>Recent content in ibm on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bajceta.github.io/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
@@ -26,7 +26,7 @@ For running Linux on PPC you need to know if your CPU support little endian or b
       <description>I saw the server on an auction with just a few minutes to spare. Always liked PPC for some reason, so it peaked my interest. Ad was sparse with info, 2 cpus, 384GB, no disks. No clue on which CPUs, was it really 384GB ram&amp;hellip; Anyway I went for it.
 Turns out it was a top of the line box.
 Specs:
- 2 x 8 core Power7 @3.55GHz 384GB ram 4 x 146GB 15k SAS  All CPUs and ram activated and has a PowerVM license.</description>
+2 x 8 core Power7 @3.55GHz 384GB ram 4 x 146GB 15k SAS All CPUs and ram activated and has a PowerVM license.</description>
     </item>
     
   </channel>

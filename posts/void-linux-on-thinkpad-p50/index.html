@@ -6,14 +6,14 @@
 
     <meta name="description" content="" />
 
-    <meta property="og:title" content="IBM Power 740" />
+    <meta property="og:title" content="Void Linux on Thinkpad P50" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bajceta.github.io/posts/ibm-power-740/" />
-    <meta itemprop="name" content="IBM Power 740">
+    <meta property="og:url" content="https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/" />
+    <meta itemprop="name" content="Void Linux on Thinkpad P50">
     <meta itemprop="description" content="">
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="IBM Power 740"/>
+    <meta name="twitter:title" content="Void Linux on Thinkpad P50"/>
     <meta name="twitter:description" content=""/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
     <div class="header header-frame">
         <div>
           
-            <h1 class="header__title">IBM Power 740</h1>
+            <h1 class="header__title">Void Linux on Thinkpad P50</h1>
           
             
         </div>
@@ -95,14 +95,6 @@
             <ul class="mb-header-nav-list">
                 
                     
-                        
-                          <li class="mb-header-nav-list__item ">
-                        <a class="mb-header-nav-list__link" href="https://bajceta.github.io/tags/ibm/"
-                                                            >ibm</a
-                                                        >
-                    </li>
-                        
-                    
                 
             </ul>
         </div>
@@ -148,27 +140,11 @@
     <div id="content">
 <article class="post">
   
-    <div class="post-content"><p>I saw the server on an auction with just a few minutes to spare. Always liked PPC for some reason, so it peaked my interest. Ad was sparse with info, 2 cpus, 384GB, no disks. No clue on which CPUs, was it really 384GB ram&hellip; Anyway I went for it.</p>
-<p>Turns out it was a top of the line box.</p>
-<p>Specs:</p>
-<ul>
-<li>2 x 8 core Power7 @3.55GHz</li>
-<li>384GB ram</li>
-<li>4 x 146GB  15k SAS</li>
-</ul>
-<p>All CPUs and ram activated and has a PowerVM license.</p>
-<p>Power consumption is not so good, it idles at around 360w-400w. I&rsquo;ll try pulling out some drives and PCIe cards that sit unused. It might take the consumption down by 20-40w.
-In comparison a Dell R620 can idle at around 100w.</p>
-<p>One of the selling points for IBM Power servers is the massive IO that they support. Power 740 is a mid level server from the series and it can support up to 4 IBM 5802 enclosures for a total of 4x 18 SAS drives and 4x 10 PCIe slots. I am not aware of any x86 system offering such expansion.</p>
-<h2 id="ibm-power-terminology">IBM Power terminology</h2>
-<p>PowerVM - Hypervisor, like KVM or VMware on x86.</p>
-<p>LPAR - Logical partition, what we would today call a VM.</p>
-<p>Hardware Management Console - IBM appliance or VM that is used to manage virtualization of PowerVM</p>
-<p>VIOS - Virtual IO Server, AIX instance that shares physical resources as virtual ones to other LPARs.</p>
-<p>IBM Power7 servers always run a hypervisor, even when all resources are dedicated to one LPAR.</p>
-<h2 id="uses-for-this-server">Uses for this server?</h2>
-<p>Getting AIX requires a service agreement with IBM, so that is out the question.</p>
-<p>It might serve as a build server for Void Linux PPC BE packages, since the maintaner can&rsquo;t afford the time to continue. Not sure if I can, but I like the thought.</p>
+    <div class="post-content"><h1 id="sleep-problem">Sleep problem</h1>
+<p>P50 would not wake up from sleep and even worse it would not enter real sleep, instead draining the battery. Only fix was long press on power button to shut it down.</p>
+<p>Solution found on <a href="https://www.reddit.com/r/voidlinux/comments/ss2i14/unable_to_wake_from_suspend/">reddit</a>:</p>
+<p>UEFI Settings -&gt; Security -&gt; Security Chip -&gt; Security Chip Selection</p>
+<p>The option that was selected was &ldquo;Intel PTT&rdquo;, and switching to &ldquo;Discrete TPM&rdquo; (followed by a confirmation) resolved the issue.</p>
 </div>
   
 </article>

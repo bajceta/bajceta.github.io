@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>psion on My blog</title>
+    <title>psion on My New Hugo Site</title>
     <link>https://bajceta.github.io/tags/psion/</link>
-    <description>Recent content in psion on My blog</description>
+    <description>Recent content in psion on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Jan 2023 14:38:27 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/tags/psion/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +15,7 @@
       <guid>https://bajceta.github.io/posts/psion-netbook/</guid>
       <description>Psion Netbook has one CF card slot and one PCMCIA card slot. Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&amp;rsquo;t read the card.
 My experience with CF cards :
-   Card CF port PCMCIA adapter     HP 16MB no yes   noname 64MB yes yes   Sandisk 256MB no yes   Sandisk 512MB no yes    Interesting that Psion 5MX reads all of these CF cards.</description>
+Card CF port PCMCIA adapter HP 16MB no yes noname 64MB yes yes Sandisk 256MB no yes Sandisk 512MB no yes Interesting that Psion 5MX reads all of these CF cards.</description>
     </item>
     
   </channel>
