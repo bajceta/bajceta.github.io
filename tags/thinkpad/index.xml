@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thinkpad on My blog</title>
+    <link>https://bajceta.github.io/tags/thinkpad/</link>
+    <description>Recent content in thinkpad on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jan 2023 18:31:46 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Void Linux on Thinkpad P50</title>
+      <link>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</link>
+      <pubDate>Wed, 25 Jan 2023 18:31:46 +0100</pubDate>
+      
+      <guid>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</guid>
+      <description>Sleep problem P50 would not wake up from sleep and even worse it would not enter real sleep, instead draining the battery. Only fix was long press on power button to shut it down.
+Solution found on reddit:
+UEFI Settings -&amp;gt; Security -&amp;gt; Security Chip -&amp;gt; Security Chip Selection
+The option that was selected was &amp;ldquo;Intel PTT&amp;rdquo;, and switching to &amp;ldquo;Discrete TPM&amp;rdquo; (followed by a confirmation) resolved the issue.</description>
+    </item>
+    
+  </channel>
+</rss>

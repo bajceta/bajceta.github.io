@@ -6,7 +6,19 @@
     <description>Recent content in linux on My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bajceta.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 18:31:46 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Void Linux on Thinkpad P50</title>
+      <link>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</link>
+      <pubDate>Wed, 25 Jan 2023 18:31:46 +0100</pubDate>
+      
+      <guid>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</guid>
+      <description>Sleep problem P50 would not wake up from sleep and even worse it would not enter real sleep, instead draining the battery. Only fix was long press on power button to shut it down.
+Solution found on reddit:
+UEFI Settings -&amp;gt; Security -&amp;gt; Security Chip -&amp;gt; Security Chip Selection
+The option that was selected was &amp;ldquo;Intel PTT&amp;rdquo;, and switching to &amp;ldquo;Discrete TPM&amp;rdquo; (followed by a confirmation) resolved the issue.</description>
+    </item>
+    
     <item>
       <title>Installing Void Linux on IBM Power 740</title>
       <link>https://bajceta.github.io/posts/void-linux-ibm-power-740/</link>
