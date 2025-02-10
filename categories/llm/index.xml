@@ -13,7 +13,7 @@
       <link>https://bajceta.github.io/posts/hp-ml350p/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://bajceta.github.io/posts/hp-ml350p/</guid>
-      <description>&lt;p&gt;Another server, HP ML350P Gen8.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a server to eventually place 4 GPUs to run LLMs.&lt;/p&gt;&#xA;&lt;p&gt;AMD MI50 did not want to run at all. Server would POST, but in linux I would get a &lt;code&gt;atombios stuck&lt;/code&gt; in dmesg.&#xA;I tried more or less every settings, kernel param, nothing worked.&lt;/p&gt;&#xA;&lt;p&gt;Finally I flashed the Radeon Pro VII firmware and not only does it work in ML350p, it will work and I get video out on the single mini display port.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Another server, HP ML350P Gen8.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a server to eventually place 4 GPUs to run LLMs.&lt;/p&gt;&#xA;&lt;p&gt;AMD MI50 did not want to run at all. Server would POST, but in Linux I would get a &lt;code&gt;atombios stuck&lt;/code&gt; in dmesg.&#xA;I tried more or less every settings, kernel param, nothing worked.&lt;/p&gt;&#xA;&lt;p&gt;Finally I flashed the Radeon Pro VII firmware and not only does it work in ML350p, it will also POST on T7600 and output video on the single mini display port.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
