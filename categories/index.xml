@@ -4,26 +4,37 @@
     <title>Categories on My blog</title>
     <link>https://bajceta.github.io/categories/</link>
     <description>Recent content in Categories on My blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jan 2023 14:38:27 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bajceta.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>portable</title>
+      <title>LLM</title>
+      <link>https://bajceta.github.io/categories/llm/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://bajceta.github.io/categories/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>https://bajceta.github.io/categories/server/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://bajceta.github.io/categories/server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portable</title>
       <link>https://bajceta.github.io/categories/portable/</link>
       <pubDate>Fri, 13 Jan 2023 14:38:27 +0100</pubDate>
-      
       <guid>https://bajceta.github.io/categories/portable/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>power</title>
+      <title>Power</title>
       <link>https://bajceta.github.io/categories/power/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://bajceta.github.io/categories/power/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -4,53 +4,44 @@
     <title>My blog</title>
     <link>https://bajceta.github.io/</link>
     <description>Recent content on My blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jan 2023 18:31:46 +0100</lastBuildDate><atom:link href="https://bajceta.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bajceta.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML350p</title>
+      <link>https://bajceta.github.io/posts/hp-ml350p/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://bajceta.github.io/posts/hp-ml350p/</guid>
+      <description>&lt;p&gt;Another server, HP ML350P Gen8.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a server to eventually place 4 GPUs to run LLMs.&lt;/p&gt;&#xA;&lt;p&gt;AMD MI50 did not want to run at all. Server would POST, but in linux I would get a &lt;code&gt;atombios stuck&lt;/code&gt; in dmesg.&#xA;I tried more or less every settings, kernel param, nothing worked.&lt;/p&gt;&#xA;&lt;p&gt;Finally I flashed the Radeon Pro VII firmware and not only does it work in ML350p, it will work and I get video out on the single mini display port.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Void Linux on Thinkpad P50</title>
       <link>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</link>
       <pubDate>Wed, 25 Jan 2023 18:31:46 +0100</pubDate>
-      
       <guid>https://bajceta.github.io/posts/void-linux-on-thinkpad-p50/</guid>
-      <description>Sleep problem P50 would not wake up from sleep and even worse it would not enter real sleep, instead draining the battery. Only fix was long press on power button to shut it down.
-Solution found on reddit:
-UEFI Settings -&amp;gt; Security -&amp;gt; Security Chip -&amp;gt; Security Chip Selection
-The option that was selected was &amp;ldquo;Intel PTT&amp;rdquo;, and switching to &amp;ldquo;Discrete TPM&amp;rdquo; (followed by a confirmation) resolved the issue.</description>
+      <description>&lt;h1 id=&#34;sleep-problem&#34;&gt;Sleep problem&lt;/h1&gt;&#xA;&lt;p&gt;P50 would not wake up from sleep and even worse it would not enter real sleep, instead draining the battery. Only fix was long press on power button to shut it down.&lt;/p&gt;&#xA;&lt;p&gt;Solution found on &lt;a href=&#34;https://www.reddit.com/r/voidlinux/comments/ss2i14/unable_to_wake_from_suspend/&#34;&gt;reddit&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;p&gt;UEFI Settings -&amp;gt; Security -&amp;gt; Security Chip -&amp;gt; Security Chip Selection&lt;/p&gt;&#xA;&lt;p&gt;The option that was selected was &amp;ldquo;Intel PTT&amp;rdquo;, and switching to &amp;ldquo;Discrete TPM&amp;rdquo; (followed by a confirmation) resolved the issue.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Psion Netbook</title>
       <link>https://bajceta.github.io/posts/psion-netbook/</link>
       <pubDate>Fri, 13 Jan 2023 14:38:27 +0100</pubDate>
-      
       <guid>https://bajceta.github.io/posts/psion-netbook/</guid>
-      <description>Psion Netbook has one CF card slot and one PCMCIA card slot. Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&amp;rsquo;t read the card.
-My experience with CF cards :
-Card CF port PCMCIA adapter HP 16MB no yes noname 64MB yes yes Sandisk 256MB no yes Sandisk 512MB no yes Interesting that Psion 5MX reads all of these CF cards.</description>
+      <description>&lt;p&gt;Psion Netbook has one CF card slot and one PCMCIA card slot.&#xA;Cards should be formatted with fdisk on linux to be type 6 - FAT16, not 0e - W95 FAT16. Otherwise it won&amp;rsquo;t read the card.&lt;/p&gt;&#xA;&lt;p&gt;My experience with CF cards :&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Card&lt;/th&gt;&#xA;          &lt;th&gt;CF port&lt;/th&gt;&#xA;          &lt;th&gt;PCMCIA adapter&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HP 16MB&lt;/td&gt;&#xA;          &lt;td&gt;no&lt;/td&gt;&#xA;          &lt;td&gt;yes&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;noname 64MB&lt;/td&gt;&#xA;          &lt;td&gt;yes&lt;/td&gt;&#xA;          &lt;td&gt;yes&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sandisk 256MB&lt;/td&gt;&#xA;          &lt;td&gt;no&lt;/td&gt;&#xA;          &lt;td&gt;yes&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sandisk 512MB&lt;/td&gt;&#xA;          &lt;td&gt;no&lt;/td&gt;&#xA;          &lt;td&gt;yes&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Interesting that Psion 5MX reads all of these CF cards.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing Void Linux on IBM Power 740</title>
       <link>https://bajceta.github.io/posts/void-linux-ibm-power-740/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://bajceta.github.io/posts/void-linux-ibm-power-740/</guid>
-      <description>Going for Void Linux Recently I switched from Ubuntu to Void Linux on all my boxes. Fortunately Void has great support for PPC. I even have it installed on a Powerbook G3.
-For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode. For a Power7 we need Void Linux ppc64 that is a BE version.</description>
+      <description>&lt;h2 id=&#34;going-for-void-linux&#34;&gt;Going for Void Linux&lt;/h2&gt;&#xA;&lt;p&gt;Recently I switched from Ubuntu to &lt;a href=&#34;https://voidlinux-ppc.org/&#34;&gt;Void Linux&lt;/a&gt; on all my boxes. Fortunately Void has great support for PPC.&#xA;I even have it installed on a Powerbook G3.&lt;/p&gt;&#xA;&lt;p&gt;For running Linux on PPC you need to know if your CPU support little endian or big endian. PowerPC started as BE and only with Power8 did it fully support LE mode.&#xA;For a Power7 we need Void Linux ppc64 that is a BE version.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>IBM Power 740</title>
       <link>https://bajceta.github.io/posts/ibm-power-740/</link>
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://bajceta.github.io/posts/ibm-power-740/</guid>
-      <description>I saw the server on an auction with just a few minutes to spare. Always liked PPC for some reason, so it peaked my interest. Ad was sparse with info, 2 cpus, 384GB, no disks. No clue on which CPUs, was it really 384GB ram&amp;hellip; Anyway I went for it.
-Turns out it was a top of the line box.
-Specs:
-2 x 8 core Power7 @3.55GHz 384GB ram 4 x 146GB 15k SAS All CPUs and ram activated and has a PowerVM license.</description>
+      <description>&lt;p&gt;I saw the server on an auction with just a few minutes to spare. Always liked PPC for some reason, so it peaked my interest. Ad was sparse with info, 2 cpus, 384GB, no disks. No clue on which CPUs, was it really 384GB ram&amp;hellip; Anyway I went for it.&lt;/p&gt;&#xA;&lt;p&gt;Turns out it was a top of the line box.&lt;/p&gt;&#xA;&lt;p&gt;Specs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2 x 8 core Power7 @3.55GHz&lt;/li&gt;&#xA;&lt;li&gt;384GB ram&lt;/li&gt;&#xA;&lt;li&gt;4 x 146GB  15k SAS&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All CPUs and ram activated and has a PowerVM license.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

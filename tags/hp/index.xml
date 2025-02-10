@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HP on My blog</title>
+    <link>https://bajceta.github.io/tags/hp/</link>
+    <description>Recent content in HP on My blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bajceta.github.io/tags/hp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML350p</title>
+      <link>https://bajceta.github.io/posts/hp-ml350p/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://bajceta.github.io/posts/hp-ml350p/</guid>
+      <description>&lt;p&gt;Another server, HP ML350P Gen8.&lt;/p&gt;&#xA;&lt;p&gt;I wanted a server to eventually place 4 GPUs to run LLMs.&lt;/p&gt;&#xA;&lt;p&gt;AMD MI50 did not want to run at all. Server would POST, but in linux I would get a &lt;code&gt;atombios stuck&lt;/code&gt; in dmesg.&#xA;I tried more or less every settings, kernel param, nothing worked.&lt;/p&gt;&#xA;&lt;p&gt;Finally I flashed the Radeon Pro VII firmware and not only does it work in ML350p, it will work and I get video out on the single mini display port.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
